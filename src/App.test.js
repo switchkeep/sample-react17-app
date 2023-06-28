@@ -1,8 +1,10 @@
+migrations/test/harfoots/sample-react17-app/src/App.test.js
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import App from './App';
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
+  const root = createRoot(div);
+  root.render(<App />);
 });
